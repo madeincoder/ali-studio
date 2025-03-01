@@ -55,13 +55,13 @@ onMounted(() => {
 });
 
 const showcaseItems = [
-  "/src/assets/images/ali/showcase/1.jpg",
-  "/src/assets/images/ali/showcase/2.jpg",
-  "/src/assets/images/ali/showcase/3.jpg",
-  "/src/assets/images/ali/showcase/4.jpg",
-  "/src/assets/images/ali/showcase/5.jpg",
-  "/src/assets/images/ali/showcase/6.jpg",
-  "/src/assets/images/ali/showcase/7.jpg",
-  "/src/assets/images/ali/showcase/8.jpg",
+  new URL("@/assets/images/ali/showcase/1.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/2.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/3.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/4.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/5.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/6.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/7.jpg", import.meta.url).href,
+  new URL("@/assets/images/ali/showcase/8.jpg", import.meta.url).href,
 ];
 </script>
