@@ -196,11 +196,10 @@ const aiVideos = [
 const getVideoUrl = (filename: string) =>
   new URL(`/src/assets/videos/${filename}`, import.meta.url).href;
 
-// Function to generate poster image URL
-const getPoster = (videoUrl: string) => videoUrl.replace(/\.\w+$/, ".png");
+// Function to generate poster image URL (same name but with .png extension)
+const getPoster = (videoUrl: string) => videoUrl.replace(/\.webm$/, ".png");
 
 // Cache variables
-const cachedImages = ref<string[]>([]);
 const cachedVideos = ref<string[]>([]);
 
 // Load cache on mount
@@ -220,6 +219,6 @@ onMounted(() => {
 <style scoped>
 video {
   border-radius: 8px;
-  background: transparent;
+  background: black;
 }
 </style>
