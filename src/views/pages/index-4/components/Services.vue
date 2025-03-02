@@ -167,14 +167,14 @@ const activeTab = ref("ai-video");
 // Image sources
 import aiImg1 from "@/assets/images/ali/ai-story.png";
 import aiImg2 from "@/assets/images/ali/ai-sound.png";
-const aiImageSources = [
-  "/src/assets/images/ai/img-6.jpg",
-  "/src/assets/images/ai/img-9.jpg",
-  "/src/assets/images/ai/img-10.jpg",
-  "/src/assets/images/ai/img-14.jpg",
-  "/src/assets/images/ai/img-21.jpg",
-  "/src/assets/images/ai/img-22.jpg",
-];
+import aiImg6 from "@/assets/images/ai/img-6.jpg";
+import aiImg9 from "@/assets/images/ai/img-9.jpg";
+import aiImg10 from "@/assets/images/ai/img-10.jpg";
+import aiImg14 from "@/assets/images/ai/img-14.jpg";
+import aiImg21 from "@/assets/images/ai/img-21.jpg";
+import aiImg22 from "@/assets/images/ai/img-22.jpg";
+
+const aiImageSources = [aiImg6, aiImg9, aiImg10, aiImg14, aiImg21, aiImg22];
 
 // List of video filenames
 const aiVideos = [
