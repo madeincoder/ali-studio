@@ -99,7 +99,31 @@
                 <div
                   class="backdrop-blur-2xl bg-white/10 rounded-md max-w-xl mx-auto"
                 >
-                  <form class="w-full flex items-center justify-between mt-7">
+                  <form
+                    @submit.prevent="handleSubmit"
+                    class="w-full flex items-center justify-between mt-7"
+                  >
+                    <input
+                      v-model="email"
+                      type="email"
+                      name="email"
+                      id="email"
+                      class="w-full p-4 border-0 focus:outline-none focus:ring-0 text-sm text-white placeholder:text-white bg-transparent"
+                      placeholder="Enter Your Email"
+                      autocomplete="off"
+                    />
+                    <button
+                      type="submit"
+                      class="py-2 px-6 me-2 border-0 text-white font-semibold text-sm rounded-md backdrop-blur-2xl bg-primary hover:bg-primary-hover hover:text-white transition-all duration-500"
+                    >
+                      <div class="flex items-center justify-center gap-1">
+                        <span>Submit</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                      </div>
+                    </button>
+                  </form>
+
+                  <!-- <form class="w-full flex items-center justify-between mt-7">
                     <input
                       type="email"
                       name="email"
@@ -116,7 +140,7 @@
                         <i class="fa-solid fa-arrow-right"></i>
                       </div>
                     </button>
-                  </form>
+                  </form> -->
                 </div>
                 <div
                   class="flex flex-wrap items-center justify-center gap-6 mt-10"
@@ -148,5 +172,18 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from "vue";
+import { useRouter } from "vue-router";
 import { MoveRight } from "lucide-vue-next";
+
+const router = useRouter();
+const email = ref("");
+
+const handleSubmit = () => {
+  if (email.value === "contact@ali-universe.com") {
+    router.push("/auth/lock-screen");
+  } else {
+    router.push("/auth/sign-up");
+  }
+};
 </script>
