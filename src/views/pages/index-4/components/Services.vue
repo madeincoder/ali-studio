@@ -79,13 +79,12 @@
                     Advanced options+
                   </h2>
                   <div class="grid grid-cols-3 gap-6">
-                    <img
-                      v-for="(img, index) in cachedImages"
-                      :key="index"
-                      :src="img"
-                      class="rounded-md"
-                      alt="AI Generated Image"
-                    />
+                    <img :src="aiImg6" class="rounded-md" alt="" />
+                    <img :src="aiImg9" class="rounded-md" alt="" />
+                    <img :src="aiImg22" class="rounded-md" alt="" />
+                    <img :src="aiImg14" class="rounded-md" alt="" />
+                    <img :src="aiImg21" class="rounded-md" alt="" />
+                    <img :src="aiImg10" class="rounded-md" alt="" />
                   </div>
                 </div>
               </div>
@@ -174,8 +173,6 @@ import aiImg14 from "@/assets/images/ai/img-14.jpg";
 import aiImg21 from "@/assets/images/ai/img-21.jpg";
 import aiImg22 from "@/assets/images/ai/img-22.jpg";
 
-const aiImageSources = [aiImg6, aiImg9, aiImg10, aiImg14, aiImg21, aiImg22];
-
 // List of video filenames
 const aiVideos = [
   "32.webm",
@@ -208,15 +205,6 @@ const cachedVideos = ref<string[]>([]);
 
 // Load cache on mount
 onMounted(() => {
-  // Load images from localStorage
-  const storedImages = localStorage.getItem("cachedImages");
-  if (storedImages) {
-    cachedImages.value = JSON.parse(storedImages);
-  } else {
-    cachedImages.value = aiImageSources;
-    localStorage.setItem("cachedImages", JSON.stringify(aiImageSources));
-  }
-
   // Load videos from localStorage
   const storedVideos = localStorage.getItem("cachedVideos");
   if (storedVideos) {
@@ -232,6 +220,6 @@ onMounted(() => {
 <style scoped>
 video {
   border-radius: 8px;
-  background: black;
+  background: transparent;
 }
 </style>
