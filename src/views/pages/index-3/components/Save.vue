@@ -14,7 +14,7 @@
             alt=""
           />
           <div class="absolute inset-0 bg-default-950/50 rounded-xl"></div>
-          <div class="hidden lg:block">
+          <!-- <div class="hidden lg:block">
             <div class="absolute top-10 -end-52">
               <div class="inline-block">
                 <div
@@ -40,7 +40,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div

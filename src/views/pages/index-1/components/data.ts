@@ -15,17 +15,9 @@ import nftArt8 from "@/assets/images/ali/categories-ai/5.jpg";
 import nftArt9 from "@/assets/images/ali/categories-ai/6.jpg";
 import nftArt10 from "@/assets/images/ali/categories-ai/7.jpg";
 import nftArt11 from "@/assets/images/ali/categories-ai/8.jpg";
-import nftArt12 from "@/assets/images/nft/art/12.png";
-import nftArt13 from "@/assets/images/nft/art/13.png";
+import nftArt12 from "@/assets/images/nft/art/5.png";
 import nftArt14 from "@/assets/images/nft/art/14.png";
-import nftArt15 from "@/assets/images/nft/art/15.png";
-import nftArt16 from "@/assets/images/nft/art/16.png";
-import nftArt17 from "@/assets/images/nft/art/17.png";
 import nftArt19 from "@/assets/images/nft/art/19.png";
-import nftArt18 from "@/assets/images/nft/art/18.png";
-import nftArt20 from "@/assets/images/nft/art/20.png";
-import nftArt21 from "@/assets/images/nft/art/21.png";
-import nftArt22 from "@/assets/images/nft/art/22.png";
 
 import nftArtReal1 from "@/assets/images/ali/categories-real/1.jpg";
 import nftArtReal2 from "@/assets/images/ali/categories-real/2.jpg";
@@ -37,7 +29,6 @@ import nftArtReal7 from "@/assets/images/ali/categories-real/7.jpg";
 import nftArtReal8 from "@/assets/images/ali/categories-real/8.jpg";
 
 import avatar1 from "@/assets/images/avatars/img-1.png";
-import avatar2 from "@/assets/images/avatars/img-2.png";
 import avatar3 from "@/assets/images/avatars/img-3.png";
 import avatar4 from "@/assets/images/avatars/img-4.png";
 import avatar5 from "@/assets/images/avatars/img-5.png";
@@ -335,7 +326,7 @@ export const browseByCategory = [
   },
   {
     type: "Music",
-    image: nftArt5,
+    image: nftArt12,
   },
   {
     type: "Videos",

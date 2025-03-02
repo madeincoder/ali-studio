@@ -7,7 +7,7 @@
   >
     <div class="relative rounded-lg overflow-hidden">
       <img
-        class="mx-auto h-full max-w-full object-cover object-top ransition duration-500 group-hover:scale-105"
+        class="mx-auto h-auto max-w-full object-cover object-top ransition duration-500 group-hover:scale-105"
         :src="blog.image"
       />
       <div class="absolute inset-0">
