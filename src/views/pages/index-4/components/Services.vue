@@ -84,63 +84,42 @@
 
               <div
                 id="tabs-with-underline-5"
-                class="transition-all duration-300 transform active"
+                class="transition-all duration-300 transform hidden"
                 role="tabpanel"
                 aria-labelledby="tabs-with-underline-item-2"
               >
                 <div class="grid xl:grid-cols-2 gap-6">
                   <div class="p-6 rounded-xl border border-white/10">
                     <h2 class="text-3xl font-medium text-white">
-                      Thousands of videos
+                      Create eye-catching images and graphics.
                     </h2>
                     <p class="text-base font-medium text-default-200 mt-5">
-                      <b>Created</b> or <b>borrowed</b> thousands of videos in
-                      our database, and thanks to all our intelligent tools to
-                      create characters, scenery, landscapes, animated objects,
-                      animated characters, and many things for a universe
-                      <b>without limit</b> and <b>wonderful.</b>
+                      Aenean imperdiet. Etiam ultricies nisi vel augue.
+                      Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam
+                      rhoncus. Maecenas tempus, tellus eget condimentum rhoncus,
+                      sem quam semper libero, sit amet adipiscing sem neque sed
+                      ipsum. Nam quam nunc, blandit vel, luctus pulvinar,
+                      hendrerit id, lorem. Maecenas nec odio et ante tincidunt
+                      tempus.
+                    </p>
+                    <p class="text-base font-medium text-default-200 mt-4">
+                      Donec vitae sapien ut libero venenatis faucibus. Nullam
+                      quis ante.
                     </p>
                   </div>
                   <div class="p-6 rounded-xl border border-white/10">
-                    <div class="bg-default-900/50 p-3 rounded-lg">
-                      <h2 class="text-lg font-medium text-white">Script.js</h2>
-                      <p class="text-base font-medium text-default-200 py-5">
-                        "date pulbilshed":
-                        <span class="text-primary"
-                          >"2015-02-05Tob.00-00+08.00",</span
-                        >
-                      </p>
-                      <P class="text-base font-medium text-default-200"
-                        >"author":{ <br />
-                        <span class="ps-7"
-                          >"private": <span class="text-primary">true ;</span>
-                          <br
-                        /></span>
-                        <span class="ps-7"
-                          >"author":
-                          <span class="text-primary">coderthemes ;</span> <br
-                        /></span>
-                        }
-                      </P>
-
-                      <P class="text-base font-medium text-default-200 pt-5"
-                        >"publlsher":{ <br />
-                        <span class="ps-7"
-                          >"@type": <span class="text-primary">text ;</span>
-                          <br
-                        /></span>
-                        <span class="ps-7"
-                          >"@name":
-                          <span class="text-primary">tailwind ;</span> <br
-                        /></span>
-                        }
-                      </P>
-
-                      <button
-                        class="text-base font-medium w-full py-2 mt-8 rounded-md text-white bg-slate-600/50"
-                      >
-                        Generate
-                      </button>
+                    <div>
+                      <h2 class="text-lg font-medium text-white mb-8">
+                        Advanced options+
+                      </h2>
+                      <div class="grid grid-cols-3 gap-6">
+                        <img :src="aiImg6" class="rounded-md" alt="" />
+                        <img :src="aiImg9" class="rounded-md" alt="" />
+                        <img :src="aiImg22" class="rounded-md" alt="" />
+                        <img :src="aiImg14" class="rounded-md" alt="" />
+                        <img :src="aiImg21" class="rounded-md" alt="" />
+                        <img :src="aiImg10" class="rounded-md" alt="" />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -587,8 +566,14 @@
 </template>
 
 <script setup lang="ts">
-import aiImg1 from "@/assets/images/ai/img-1.jpg";
-import aiImg2 from "@/assets/images/ai/img-2.jpg";
+import aiImg1 from "@/assets/images/ali/ai-story.png";
+import aiImg2 from "@/assets/images/ali/ai-sound.png";
+import aiImg6 from "@/assets/images/ai/img-6.jpg";
+import aiImg9 from "@/assets/images/ai/img-9.jpg";
+import aiImg10 from "@/assets/images/ai/img-10.jpg";
+import aiImg14 from "@/assets/images/ai/img-14.jpg";
+import aiImg21 from "@/assets/images/ai/img-21.jpg";
+import aiImg22 from "@/assets/images/ai/img-22.jpg";
 import aiVideo1 from "@/assets/videos/32.webm";
 import aiVideo2 from "@/assets/videos/31.webm";
 import aiVideo3 from "@/assets/videos/30.webm";
