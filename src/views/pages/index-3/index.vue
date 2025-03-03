@@ -109,6 +109,21 @@
 
   <!-- <Footer/> -->
 
+  <div class="border-t border-white/10 py-6">
+    <div
+      class="container lg:px-20 flex flex-wrap justify-center items-center gap-4 h-full text-center"
+    >
+      <p class="text-base font-medium text-default-400">
+        {{ currentYear }}
+        © {{ appName }}
+        <a href="#">
+          <!-- <Heart class="inline h-4 w-4 text-red-500 fill-red-500"/> -->
+          {{ appAuthor }}</a
+        >
+      </p>
+    </div>
+  </div>
+
   <Background1 />
 
   <BackToTop />
@@ -177,4 +192,5 @@ const navLinks: NavBarLinkType[] = [
   //   route: { url: "#faq" },
   // },
 ];
+import { currentYear, appName, appAuthor, socialLinks } from "@/helpers";
 </script>

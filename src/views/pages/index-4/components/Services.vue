@@ -79,12 +79,36 @@
                     Advanced options+
                   </h2>
                   <div class="grid grid-cols-3 gap-6">
-                    <img :src="aiImg6" class="rounded-md" alt="" />
-                    <img :src="aiImg9" class="rounded-md" alt="" />
-                    <img :src="aiImg22" class="rounded-md" alt="" />
-                    <img :src="aiImg14" class="rounded-md" alt="" />
-                    <img :src="aiImg21" class="rounded-md" alt="" />
-                    <img :src="aiImg10" class="rounded-md" alt="" />
+                    <img
+                      :src="aiImg6"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
+                    <img
+                      :src="aiImg9"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
+                    <img
+                      :src="aiImg22"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
+                    <img
+                      :src="aiImg14"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
+                    <img
+                      :src="aiImg21"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
+                    <img
+                      :src="aiImg10"
+                      class="rounded-md aspect-square object-cover"
+                      alt=""
+                    />
                   </div>
                 </div>
               </div>
@@ -166,12 +190,12 @@ const activeTab = ref("ai-video");
 // Image sources
 import aiImg1 from "@/assets/images/ali/ai-story.png";
 import aiImg2 from "@/assets/images/ali/ai-sound.png";
-import aiImg6 from "@/assets/images/ai/img-6.jpg";
-import aiImg9 from "@/assets/images/ai/img-9.jpg";
-import aiImg10 from "@/assets/images/ai/img-10.jpg";
-import aiImg14 from "@/assets/images/ai/img-14.jpg";
-import aiImg21 from "@/assets/images/ai/img-21.jpg";
-import aiImg22 from "@/assets/images/ai/img-22.jpg";
+import aiImg6 from "@/assets/images/ali/showcase/1.jpg";
+import aiImg9 from "@/assets/images/ali/showcase/2.jpg";
+import aiImg10 from "@/assets/images/ali/showcase/3.jpg";
+import aiImg14 from "@/assets/images/ali/showcase/4.jpg";
+import aiImg21 from "@/assets/images/ali/showcase/5.jpg";
+import aiImg22 from "@/assets/images/ali/showcase/6.jpg";
 
 // List of video filenames
 const aiVideos = [
