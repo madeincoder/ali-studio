@@ -14,6 +14,13 @@
           <b>Invites friends</b> to participate in the Universal Ali <br />
           adventure and receive <b>free gifts</b> and <b>tokens</b>
         </p>
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-10">
+          <a
+            href="#"
+            class="inline-flex items-center justify-center gap-2 bg-primary text-white py-2 px-6 rounded-full hover:bg-primary-hover transition-all duration-300"
+            >Invite friends
+          </a>
+        </div>
         <!-- <form class="space-y-2 mt-6">
           <div class="relative w-full">
             <input
